@@ -1,0 +1,16 @@
+{
+    "todoList": [
+        {
+            "job": "Breakfast",
+            "state": "false"
+        },
+        {
+            "job": "Eteration",
+            "state": "false"
+        },
+        {
+            "job": "Trying to Learn",
+            "state": "false"
+        }
+    ]
+}

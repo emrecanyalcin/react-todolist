@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Heading from './component/Heading'
+import Table from './component/Table'
+import * as data from './data.json';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'reactstrap';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+
+class App extends React.Component {
+    render() {
+      return(
+        
+        <div className="App">
+        <Container container>
+        <Heading title="Todo List"/>
+        <Table data={data.todoList}/>
+        
+        </Container>
+      </div>
+      );
+      
+    }
 }
 
 export default App;
