@@ -5,11 +5,11 @@ import TableBody from './TableBody';
 
 export default class TableContent extends React.Component {
     render() {
-        const { data } = this.props;
+        const { data, onDelete} = this.props;
         return (
             <Table striped>
                 <TableHeader />
-                <TableBody list={data}/>
+                <TableBody list={data} onDelete={onDelete}/>
                 
             </Table>
         );

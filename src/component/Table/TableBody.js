@@ -15,6 +15,7 @@ export default class TableBody extends React.Component {
                             
                             <td><input type="checkbox"></input></td>
                             <td><input type="checkbox"></input></td>
+                            <td><button className="btn btn-danger" onClick={() => this.props.onDelete(index)}>Delete</button></td>
                         </tr>
                     );
                 })}
